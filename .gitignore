@@ -58,3 +58,12 @@ sysinfo.txt
 # Crashlytics generated file
 crashlytics-build.properties
 
+# SQLite databases
+*.sqlite3
+*.sqlite3.meta
+*.db
+*.db.meta 
+
+# Photoshop files
+*.psd
+*.psd.meta
