@@ -59,7 +59,7 @@ namespace DnDPedia.DatabaseManager
 
 			// TODO: Put this information in the log.
 			#if UNITY_EDITOR
-				Debug.Log("Connection to database openAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA.");
+				Debug.Log("Connection to database.");
 			#endif
 		}
 

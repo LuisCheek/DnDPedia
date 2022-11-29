@@ -1,0 +1,12 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
+    <ui:Template name="TabBar" src="project://database/Assets/_DnDPedia/UI/TabBar.uxml?fileID=9197481963319205126&amp;guid=04625dfe77820b642b54ca43aa77ee60&amp;type=3#TabBar" />
+    <ui:Template name="SearchTabMenu" src="project://database/Assets/_DnDPedia/UI/SearchTab.uxml?fileID=9197481963319205126&amp;guid=444a35f9b723e13479e4dc96e8433c90&amp;type=3#SearchTab" />
+    <ui:Template name="MyListsTabMenu" src="project://database/Assets/_DnDPedia/UI/MyListsTab.uxml?fileID=9197481963319205126&amp;guid=2fa19c17b2f5e3b478fd2a22c4d51e3d&amp;type=3#MyListsTabMenu" />
+    <ui:Template name="DatabaseTab" src="project://database/Assets/_DnDPedia/UI/DatabaseTab.uxml?fileID=9197481963319205126&amp;guid=e84bc01da98a84340b89f54105eaf946&amp;type=3#DatabaseTab" />
+    <DnDPedia.UserInterfaceControl picking-mode="Ignore" style="position: absolute; left: 0; top: 0; right: 0; bottom: 0; width: 100%; height: 100%;">
+        <ui:Instance template="TabBar" name="TabBar" picking-mode="Ignore" style="width: 100%; height: 100%; position: absolute; left: 0; top: 0; right: 0; bottom: 0; display: flex;" />
+        <ui:Instance template="SearchTabMenu" name="SearchTab" picking-mode="Ignore" style="position: absolute; left: 0; top: 0; right: 0; bottom: 0; width: 100%; height: 100%;" />
+        <ui:Instance template="MyListsTabMenu" name="MyListsTab" style="width: 100%; height: 100%; position: absolute; left: 0; top: 0; right: 0; bottom: 0; display: none;" />
+        <ui:Instance template="DatabaseTab" name="DatabaseTab" style="position: absolute; left: 0; top: 0; right: 0; bottom: 0; width: 100%; height: 100%; display: none;" />
+    </DnDPedia.UserInterfaceControl>
+</ui:UXML>

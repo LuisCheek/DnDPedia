@@ -1,0 +1,23 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
+    <Style src="project://database/Assets/_DnDPedia/UI/UserInterfaceStyles.uss?fileID=7433441132597879392&amp;guid=9e408a175eb4203468f2dba665d1b0a2&amp;type=3#UserInterfaceStyles" />
+    <ui:VisualElement name="root" picking-mode="Ignore" style="width: 100%; height: 80%; position: absolute; left: 0; top: 20%; right: 0; bottom: 0;">
+        <ui:VisualElement name="tab-container" picking-mode="Ignore" style="align-items: flex-start; flex-direction: row; justify-content: space-around; width: 100%; height: 100%;">
+            <ui:VisualElement name="results-container" picking-mode="Ignore" style="align-items: center; left: auto; background-color: rgb(243, 255, 97); width: 67%; height: 100%; flex-direction: column; justify-content: flex-start;">
+                <ui:TextField text="Search..." name="search-bar-text-field" password="false" is-delayed="false" focusable="true" value="Search..." style="width: 95%; height: 5%; align-items: stretch; justify-content: center; overflow: visible; flex-direction: row; opacity: 1; top: auto; position: relative; margin-left: 0; margin-right: 0; margin-top: 1%; margin-bottom: 0;" />
+                <ui:ListView focusable="false" name="results-list-view" fixed-item-height="10" show-border="false" show-foldout-header="false" show-add-remove-footer="false" reorderable="false" reorder-mode="Simple" show-bound-collection-size="false" horizontal-scrolling="false" style="width: 95%; height: 90%; padding-bottom: 0; margin-bottom: 0; background-color: rgb(255, 198, 198); top: auto; margin-top: 1%;" />
+            </ui:VisualElement>
+            <ui:VisualElement name="filters-container" picking-mode="Ignore" style="align-items: center; width: 33%; height: 100%; right: initial; background-color: rgb(76, 115, 200); flex-direction: column; justify-content: flex-start;">
+                <ui:VisualElement name="filers-row-0" picking-mode="Ignore" style="width: 100%; height: 10%; align-items: flex-start; flex-direction: row; justify-content: space-between; margin-top: 0; top: auto;">
+                    <ui:Button text="Search" display-tooltip-when-elided="true" name="search-button" style="width: 45%; height: 85%;" />
+                    <ui:Button text="Reset" display-tooltip-when-elided="true" name="reset-button" style="width: 45%; height: 85%;" />
+                </ui:VisualElement>
+                <ui:VisualElement name="filers-row-1" picking-mode="Ignore" style="width: 100%; height: 10%; align-items: flex-start; flex-direction: row; justify-content: space-between; margin-top: 0; top: auto; -unity-font-style: bold; color: rgb(0, 0, 0); -unity-font: url(&apos;project://database/Assets/TextMesh%20Pro/Examples%20&amp;%20Extras/Fonts/Oswald-Bold.ttf?fileID=12800000&amp;guid=c9f6d0e7bc8541498c9a4799ba184ede&amp;type=3#Oswald-Bold&apos;);">
+                    <ui:SliderInt label="Level" value="0" high-value="9" name="level-slider" show-input-field="true" focusable="false" style="width: 100%; height: 100%; margin-left: 0; margin-right: 0; margin-top: 0; margin-bottom: 0; border-top-width: 0; justify-content: flex-start; align-items: center; padding-right: 48%;" />
+                </ui:VisualElement>
+                <ui:VisualElement name="filers-row-2" picking-mode="Ignore" style="width: 100%; height: 10%; align-items: flex-start; flex-direction: row; justify-content: space-between; margin-top: 0; top: auto; color: rgb(0, 0, 0); -unity-font-style: bold; -unity-font: url(&apos;project://database/Assets/TextMesh%20Pro/Examples%20&amp;%20Extras/Fonts/Oswald-Bold.ttf?fileID=12800000&amp;guid=c9f6d0e7bc8541498c9a4799ba184ede&amp;type=3#Oswald-Bold&apos;);">
+                    <ui:DropdownField label="Class" index="-1" choices="Artificer,Bard,Cleric,Druid,Paladin,Ranger,Sorcerer,Warlock,Wizard" name="classes-dropdown" style="left: auto; top: auto; width: 100%; height: 100%; margin-left: 0; margin-right: 0; margin-top: 0; margin-bottom: 0; align-items: center; justify-content: center; padding-top: 0; padding-right: 2px;" />
+                </ui:VisualElement>
+            </ui:VisualElement>
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>
